@@ -1,7 +1,7 @@
 /**
  * Created by manuel on 5/23/18.
  */
-angular.module('PartAppUI').controller('LogInController', ['$http', '$log', '$scope', '$location', '$routeParams',
+angular.module('AppChat').controller('LogInController', ['$http', '$log', '$scope', '$location', '$routeParams',
     function($http, $log, $scope, $location, $routeParams) {
         // This variable lets you access this controller
         // from within the callbacks of the $http object

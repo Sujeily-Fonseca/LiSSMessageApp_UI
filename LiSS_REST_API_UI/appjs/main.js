@@ -18,7 +18,7 @@
         }).when('/profile', {
             templateUrl: 'pages/profile.html',
             controller: 'ProfileController',
-            ontrollerAs : 'profileCtrl'
+            controllerAs : 'profileCtrl'
         }).otherwise({
             redirectTo: '/chat'
         });

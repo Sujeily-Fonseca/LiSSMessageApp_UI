@@ -2,7 +2,7 @@ angular.module('AppChat').controller('ProfileController', ['$http', '$log', '$sc
     function($http, $log, $scope ,$location, $routeParams) {
         var thisCtrl = this;
 
-        this.profile = [];
+        this.profileList = [];
         this.userId = "";
 
         this.loadProfile = function() {
@@ -16,7 +16,7 @@ angular.module('AppChat').controller('ProfileController', ['$http', '$log', '$sc
 
                 for (u in users) {
                     user = users[u];
-                    thisCtrl.profile.push({
+                    thisCtrl.profileList.push({
                         "username":user['username'],
                         "fName":user['fName'],
                         "lName":user['lName'],

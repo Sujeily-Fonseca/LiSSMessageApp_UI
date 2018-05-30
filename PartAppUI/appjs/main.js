@@ -23,6 +23,10 @@
             templateUrl: 'pages/profile.html',
             controller: 'ProfileController',
             controllerAs : 'ProfileCtrl'
+        }).when('/chat', {
+            templateUrl: 'pages/chat.html',
+            controller: 'ChatController',
+            controllerAs : 'chatCtrl'
         }).otherwise({
             redirectTo: '/login'
         });

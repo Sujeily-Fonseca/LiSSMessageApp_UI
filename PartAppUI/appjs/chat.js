@@ -6,7 +6,8 @@ angular.module('PartAppUI').controller('ChatController', ['$http', '$log', '$sco
         this.newText = "";
 
         var userId = "";
-        var groupId = "";
+        this.groupId = localStorage.groupID;
+        $log.log("Este soy yooo!", this.groupId);
         var replyValue = "False";
         var replyId = "";
         //this.userID = localStorage.getItem("UID")

@@ -13,7 +13,6 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
         var replyId = "";
 
         var msgId = "";
-
         //this.userID = localStorage.getItem("UID")
         //localStorage.removeItem("UID")
 
@@ -74,8 +73,7 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
 
         this.messageWithHashtags = function(){
 
-            //var url = "http://127.0.0.1:5000/MessageApp/message/hashtag/" + parseInt(this.groupId)+"?hashString=%23" + this.hashText;
-            var url = "http://127.0.0.1:5000/MessageApp/message/hashtag/1" + this.hashText;
+            var url = "http://127.0.0.1:5000/MessageApp/message/hashtag/" + parseInt(this.groupId)+"?hashString=%23" + hashText;
 
              $http.get(url).then( function(data){
                 // Get the messages from the server through the rest api
@@ -120,15 +118,13 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
 
         this.postMsg = function(){
             var data = {};
-            //data.userId = 1+"";//this.userID;
-            //data.groupId = 1+"";//this.groupId;
-            data.newText = this.newText;
-            data.replyValue = "False";
-            data.replyId = 1+"";
+           // data.userId = this.userID;
+            //data.groupId = this.groupId;
+            data.msgText = this.msgText;
+            data.replyValue = this.replyValue;
+            data.replyId = this.replyId;
 
-            $log.log("Message: ", this.newText)
-
-            var reqURL = "http://localhost:5000/MessageApp/messages/groups/1/user/1"
+            var reqURL = "http://localhost:5000//MessageApp/messages/groups/" + groupId + "/user/" + userId
             console.log("reqURL: " + reqURL)
 
             var config = {
@@ -139,13 +135,20 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
 
             $http.post(reqURL, data, config).then(function (response){
                 console.log("data: " + JSON.stringify(response.data));
-                alert("New message sent msgId: " + response.data.Message.msgId);
+                alert("New message sent by user: " + response.data.Part.uid);
             }).catch(function(error){
                 console.log(error);
                 alert(error);
             });
-        };
 
+            //var msg = thisCtrl.newText;
+            // Need to figure out who I am
+            //var author = "Sujeily";
+            //var lname = "Fonseca"
+
+            //thisCtrl.messageLi st.unshift({"first_name": author, "last_name" : lname, "message" : msg, "like" : 0, "nolike" : 0});
+            //thisCtrl.newText = "";
+        };
 
         this.postLike = function(){
             var data = {};

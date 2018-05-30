@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AppChat">
+<head>
+    <meta charset="UTF-8">
+    <title>LiSSMessageApp</title>
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Materialize -->
+    <link href = "css/materialize.css" rel = "stylesheet">
+    <script src="js/materialize.js"></script>
+	
+    <!-- AngularJS -->
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--LiSSMessageApp-->
+    <link rel="shortcut icon" type="image/png" href="images/LiSS.png"/>
+
+</head>
+<body>
+    <center><h1><font face="forte" size="10" style="color:DodgerBlue;">LiSS Messaging Application</font></h1></center>
+    <center><input type="image" src="images/messages.png" width="100" height="100" value="Reload Page" onClick="window.location.reload()"/></center>
+    <ng-view>
+    </ng-view>
+    <script type="text/javascript" src="appjs/main.js"></script>
+    <script type="text/javascript" src="appjs/chat.js"></script>
+</body>
+</html>

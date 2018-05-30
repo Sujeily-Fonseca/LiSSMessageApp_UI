@@ -1,10 +1,11 @@
-angular.module('AppChat').controller('GroupController', ['$http', '$log', '$scope', '$location', '$routeParams',
+angular.module('PartAppUI').controller('GroupController', ['$http', '$log', '$scope', '$location', '$routeParams',
     function($http, $log, $scope ,$location, $routeParams) {
         var thisCtrl = this;
 
         this.groupList = [];
         this.newGroup = "";
-        this.userId = "";
+        this.ownerId = "";
+        this.groupId = "";
 
         this.loadGroups = function() {
 
@@ -30,8 +31,8 @@ angular.module('AppChat').controller('GroupController', ['$http', '$log', '$scop
             // Need to figure out who I am
             var data = {};
             data.newGroup = this.newGroup;
-            data.userId = 1+"";
-            var reqURL = "http://localhost:5000/MessageApp/MessageApp/groups";
+            data.ownerId = 1+"";
+            var reqURL = "http://localhost:5000/MessageApp/groups";
             console.log("reqURL: " + reqURL);
             // configuration headers for HTTP request
             var config = {
@@ -61,7 +62,16 @@ angular.module('AppChat').controller('GroupController', ['$http', '$log', '$scop
             //thisCtrl.newGroup = "";
         };
 
+        this.saveGroupId = function(groupID){
+        $log.log("ENTRE EN SAVE");
+        $log.log(groupID);
+            if(typeof(Storage) !== "undefined"){
+                localStorage.setItem("groupID", groupID);
+            }
+
+        }
         this.loadGroups();
+
 }]);
 
 

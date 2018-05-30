@@ -1,0 +1,38 @@
+<header><br></header>
+<div >
+    <center>
+   <font face="forte" size="50" style="color:navy" style ="text-align:center"> LiSS Message Statistics</font>
+    </center>
+</div>
+<div class="container">
+   <div id="likes_div" class="chart card"></div>
+      <div id="dislikes_div" class="chart card"></div>
+</div>
+<div class="container">
+      <div id="messages_div" class="chart card"></div>
+      <div id="replies_div" class="chart card"></div>
+
+</div>
+<div class="container">
+        <div id="trending_div" class="chart card"></div>
+    <div id="topusers_div" class="chart card"></div>
+
+</div>
+      <style>
+        .chart {
+          height: 700px;
+          width: 600px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content-center;
+        }
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        margin: 10px;
+        }
+
+      </style>

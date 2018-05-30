@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="613d8fb9-465d-49a7-a5ce-54559abf5251" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="613d8fb9-465d-49a7-a5ce-54559abf5251" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,11 +42,6 @@
             <path>
               <item name="LiSSMessageApp_UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="LiSSMessageApp_UI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LiSSMessageApp_UI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LiSSMessageApp_UI" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-seed copy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />

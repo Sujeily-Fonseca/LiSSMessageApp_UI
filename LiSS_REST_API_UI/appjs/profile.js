@@ -2,7 +2,7 @@ angular.module('AppChat').controller('ProfileController', ['$http', '$log', '$sc
     function($http, $log, $scope ,$location, $routeParams) {
         var thisCtrl = this;
 
-        this.profileList = [];
+        this.profile = [];
         this.userId = "";
 
         this.loadProfile = function() {
@@ -12,11 +12,11 @@ angular.module('AppChat').controller('ProfileController', ['$http', '$log', '$sc
             $http.get(url).then(function (data) {
 
                 $log.log("Profile Loaded: ", data['data']['User']);
-                var groups = data['data']['User'];
+                var users = data['data']['User'];
 
                 for (u in users) {
                     user = users[u];
-                    thisCtrl.profileList.push({
+                    thisCtrl.profile.push({
                         "username":user['username'],
                         "fName":user['fName'],
                         "lName":user['lName'],
@@ -26,4 +26,5 @@ angular.module('AppChat').controller('ProfileController', ['$http', '$log', '$sc
                 };
             });
         };
+        this.loadProfile();
     }]);

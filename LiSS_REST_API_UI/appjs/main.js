@@ -7,18 +7,17 @@
             templateUrl: 'login.html',
             controller: 'LoginController',
             controllerAs : 'loginCtrl'
+        }).when('/chat', {
+            templateUrl: 'pages/chat.html',
+            controller: 'ChatController',
+            controllerAs : 'chatCtrl'
         }).when('/group', {
             templateUrl: 'pages/group.html',
             controller: 'GroupController',
             controllerAs : 'groupCtrl'
         }).otherwise({
-            //redirectTo: '/chat'
+            redirectTo: '/chat'
         });
-//        .when('/chat', {
-//            templateUrl: 'pages/chat.html',
-//            controller: 'ChatController',
-//            controllerAs : 'chatCtrl'
-//         })
     }]);
 
 })();

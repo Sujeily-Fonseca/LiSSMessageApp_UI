@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="613d8fb9-465d-49a7-a5ce-54559abf5251" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/dashboard/appjs/dashboard.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap-grid.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap-grid.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap-grid.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap-grid.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap-reboot.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap-reboot.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap-reboot.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap-reboot.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/css/bootstrap.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/js/bootstrap.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/js/bootstrap.bundle.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/js/bootstrap.bundle.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/js/bootstrap.bundle.min.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/js/bootstrap.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dashboard/js/bootstrap.min.js.map" afterPath="" />
-    </list>
+    <list default="true" id="613d8fb9-465d-49a7-a5ce-54559abf5251" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +16,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="62" />
-    <option name="y" value="136" />
+    <option name="x" value="41" />
+    <option name="y" value="33" />
     <option name="width" value="1233" />
     <option name="height" value="713" />
   </component>
@@ -108,7 +84,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="136" width="1233" height="713" extended-state="0" />
+    <frame x="41" y="33" width="1233" height="713" extended-state="0" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979724" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

@@ -6,7 +6,8 @@ angular.module('PartAppUI').controller('LogInController', ['$http', '$log', '$sc
         // This variable lets you access this controller
         // from within the callbacks of the $http object
         var thisCtrl = this;
-        user
+        this.loginList = [];
+
         this.login = function(){
             // Build the data object
             var data = {};
@@ -32,9 +33,15 @@ angular.module('PartAppUI').controller('LogInController', ['$http', '$log', '$sc
             // Now issue the http request to the rest API
 
             $http.post(reqURL, data, config).then( function (response) {
-                    console.log("data: " + JSON.stringify(response.data));
-                    //alert("New part added with id: " + response.data.Part.pid);
+                    $log.log("data: ", response['userId']);
+                    var logged = data['data']['userId'];
 
+                    for (u in logged) {
+                    logs = logged[g];
+                    thisCtrl.loginList.push({
+                        "userId":logs['userID']
+                    });
+                };
 
                     $location.url('/group');
                 }).catch(function(error){

@@ -10,7 +10,7 @@
         }).when('/chat', {
             templateUrl: 'pages/chat.html',
             controller: 'ChatController',
-            controllerAs : 'chatCtrl'
+            controllerAs : 'ChatCtrl'
         }).otherwise({
             redirectTo: '/chat'
         });

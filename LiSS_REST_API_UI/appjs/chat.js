@@ -1,9 +1,15 @@
-angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope',
-    function($http, $log, $scope) {
+angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope', '$location', '$routeParams',
+    function($http, $log,$scope, $location, $routeParams) {
         var thisCtrl = this;
 
         this.messageList = [];
         this.newText = "";
+
+        var userId = "";
+        var groupId = "";
+        var msgText = "";
+        var replyValue = "";
+        var replyId = "";
         //this.userID = localStorage.getItem("UID")
         //localStorage.removeItem("UID")
 
@@ -76,13 +82,37 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
         };
 
         this.postMsg = function(){
-            var msg = thisCtrl.newText;
-            // Need to figure out who I am
-            var author = "Sujeily";
-            var lname = "Fonseca"
+            var data = {};
+           // data.userId = this.userID;
+            //data.groupId = this.groupId;
+            data.msgText = this.msgText;
+            data.replyValue = this.replyValue;
+            data.replyId = this.replyId;
 
-            thisCtrl.messageList.unshift({"first_name": author, "last_name" : lname, "message" : msg, "like" : 0, "nolike" : 0});
-            thisCtrl.newText = "";
+            var reqURL = "http://localhost:5000//MessageApp/messages/groups/" + groupId + "/user/" + userId
+            console.log("reqURL: " + reqURL)
+
+            var config = {
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                }
+            }
+
+            $http.post(reqURL, data, config).then(function (response){
+                console.log("data: " + JSON.stringify(response.data));
+                alert("New message sent by user: " + response.data.Part.uid);
+            }).catch(function(error){
+                console.log(error);
+                alert(error);
+            });
+
+            //var msg = thisCtrl.newText;
+            // Need to figure out who I am
+            //var author = "Sujeily";
+            //var lname = "Fonseca"
+
+            //thisCtrl.messageLi st.unshift({"first_name": author, "last_name" : lname, "message" : msg, "like" : 0, "nolike" : 0});
+            //thisCtrl.newText = "";
         };
 
         this.loadMessages();

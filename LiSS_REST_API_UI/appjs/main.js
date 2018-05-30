@@ -10,7 +10,11 @@
         }).when('/chat', {
             templateUrl: 'pages/chat.html',
             controller: 'ChatController',
-            controllerAs : 'ChatCtrl'
+            controllerAs : 'chatCtrl'
+         }).when('/group', {
+            templateUrl: 'pages/group.html',
+            controller: 'GroupController',
+            controllerAs : 'groupCtrl'
         }).otherwise({
             redirectTo: '/chat'
         });

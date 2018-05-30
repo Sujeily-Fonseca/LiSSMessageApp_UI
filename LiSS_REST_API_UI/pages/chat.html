@@ -1,14 +1,15 @@
+<style>
+    #reactionSection {
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 20px;
+    }
+</style>
+
 <div ng-cloak style="align-content: center">
     <div class="row">
-        <div class="col s12 m4 l3">
-            <ul class="nav-news-feed">
-                <li><div><a href="profile.html">My Profile</a></div></li>
-                <li><div><a href="contacts.html">Contacts</a></div></li>
-                <li><div><a href="chat.html">Chats</a></div></li>
-                <li><div><a href="images.html">Images</a></div></li>
-                <li><div><a href="videos.html">Videos</a></div></li>
-            </ul>
-        </div>
         <div class="col s12 m8 19">
             <div class="card  cyan darken-1">
                 <div class="card-content ">
@@ -41,10 +42,16 @@
                             </p>
                         </div>
                         <div class="card-action">
-                            <a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">thumb_up
-                            </i></a> <span ng-bind= "m.likes">  </span>
-                            <a class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">thumb_down
-                            </i></a><span ng-bind="m.dislikes">  </span>
+                            <button class="btn-floating btn-small waves-effect waves-light blue" type="button" onclick="getLikesUsers()"><i class="material-icons">thumb_up
+                            </i></button> <span ng-bind= "m.likes"></span>
+                              <div class="reactionSection1">
+                                <p>{{m.reactions_likes}}</p>
+                              </div>
+                            <button class="btn-floating btn-small waves-effect waves-light blue" type="button" onclick="getDislikesUsers()"><i class="material-icons">thumb_down
+                            </i></button><span ng-bind="m.dislikes"></span>
+                              <div class="reactionSection2">
+                                <p>{{m.reactions_dislikes}}</p>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -52,3 +59,23 @@
         </div>
     </div>
 </div>
+
+<script>
+function getLikesUsers() {
+    var x = document.getElementById("reactionSection1");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function getDislikesUsers() {
+    var x = document.getElementById("reactionSection2");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>

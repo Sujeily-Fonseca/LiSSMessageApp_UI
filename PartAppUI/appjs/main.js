@@ -19,6 +19,10 @@
             templateUrl: 'pages/register.html',
             controller: 'RegisterController',
             controllerAs : 'RegisterCtrl'
+        }).when('/profile', {
+            templateUrl: 'pages/profile.html',
+            controller: 'ProfileController',
+            controllerAs : 'ProfileCtrl'
         }).otherwise({
             redirectTo: '/login'
         });

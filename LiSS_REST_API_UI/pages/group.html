@@ -37,28 +37,18 @@
             background-color: #666;
             color: white;
         }
+
+        .button4 {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+        }
+
+        .button4:hover {background-color: #e7e7e7;}
     </style>
 </head>
 
 <body>
-
-<h2>My Groups</h2>
-<div ng-cloak style="align-content: center">
-    <div ng-repeat="g in groupCtrl.groupList">
-        <div id="btnContainer">
-        <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button>
-        <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
-        </div>
-        <br>
-
-        <div class="row">
-          <div class="column" style="background-color:#aaa;">
-            <h2><span>{{g.group_name}}</span></h2>
-          </div>
-        </div>
-    </div>
-</div>
-
 <script>
     // Get the elements with class="column"
     var elements = document.getElementsByClassName("column");
@@ -91,6 +81,19 @@
       });
     }
 </script>
+
+<center><h2><font face="verdana" size="5" style="color:DodgerBlue;">MY GROUPS</font></h2></center>
+<div ng-cloak style="align-content: center">
+    <div ng-repeat="g in groupCtrl.groupList">
+        <div class="row">
+          <div class="column" style="background-color:#0099ff;">
+            <h4><font face="verdana" size="5" style="color:white;">{{g.group_name}}</font></h4>
+              <button class="button button4"><b>SELECT GROUP</b></button>
+          </div>
+        </div>
+
+    </div>
+</div>
 
 </body>
 </html>

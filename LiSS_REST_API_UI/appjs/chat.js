@@ -4,6 +4,7 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
 
         this.messageList = [];
         this.newText = "";
+        this.hashText = "";
 
         var userId = "";
         var groupId = "";
@@ -61,6 +62,34 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
                 //         thisCtrl.messageList.push(msg);
                 //     });
                 // };
+            });
+        };
+
+        this.messageWithHashtags = function(){
+
+            var url = "http://127.0.0.1:5000/MessageApp/message/hashtag/" + parseInt(this.groupId)+"?hashString=%23" + hashText;
+
+             $http.get(url).then( function(data){
+                // Get the messages from the server through the rest api
+                $log.log("Message Loaded: ", data["data"]["Messages"]);
+                messages = data["data"]["Messages"];
+                messages.forEach(function(part, index, arr){
+                    var url_reactions = "http://127.0.0.1:5000/MessageApp/reactions?msgId=" + arr[index]["msgID"]
+                    $http.get(url_hash).then(function(response) {
+
+                        reactions = response.data;
+                        msg = {
+                            "msgID": arr[index]["msgID"],
+                            "message": arr[index]["message"],
+                            "userID": arr[index]["userID"],
+                            "first_name": arr[index]["fName"],
+                            "last_name": arr[index]["lName"],
+                            "likes": reactions['Reactions']['likes']['count'],
+                            "dislikes": reactions['Reactions']['dislikes']['count']
+                        }
+                        thisCtrl.messageList.push(msg);
+                    });
+                })
             });
         };
 

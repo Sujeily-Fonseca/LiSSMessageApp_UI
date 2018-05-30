@@ -15,6 +15,10 @@
             templateUrl: 'pages/group.html',
             controller: 'GroupController',
             controllerAs : 'groupCtrl'
+        }).when('/profile', {
+            templateUrl: 'pages/profile.html',
+            controller: 'ProfileController',
+            ontrollerAs : 'profileCtrl'
         }).otherwise({
             redirectTo: '/chat'
         });

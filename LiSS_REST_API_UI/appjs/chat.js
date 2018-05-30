@@ -7,14 +7,11 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
         this.hashText = "";
 
         var userId = "";
-        var groupId = "";
+        var groupId = localStorage.groupID;
         var msgText = "";
-        var replyValue = "";
+        var replyValue = "False";
         var replyId = "";
-
         var msgId = "";
-        //this.userID = localStorage.getItem("UID")
-        //localStorage.removeItem("UID")
 
         this.loadMessages = function(){
 
@@ -45,29 +42,6 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
                         thisCtrl.messageList.push(msg);
                     });
                 })
-                // for(m in messages){
-                //     message = messages[m];
-                //
-                //     var url_reactions = "http://127.0.0.1:5000/MessageApp/reactions?msgId=" + message["msgID"];
-                //      $log.log("MsgID", message["msgID"]);
-                //
-                //     $http.get(url_reactions).then(function(response) {
-                //         var mes = message;
-                //         $log.log("Reactions Loaded: ", response.data);
-                //         $log.log("MsgID", message["msgID"]);
-                //         reactions = response.data;
-                //         msg = {
-                //             "msgID": mes["msgID"],
-                //             "message": mes["message"],
-                //             "userID": mes["userID"],
-                //             "first_name": mes["fName"],
-                //             "last_name": mes["lName"],
-                //             "likes": reactions['Reactions']['likes']['count'],
-                //             "dislikes": reactions['Reactions']['dislikes']['count']
-                //         }
-                //         thisCtrl.messageList.push(msg);
-                //     });
-                // };
             });
         };
 
@@ -118,7 +92,7 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
 
         this.postMsg = function(){
             var data = {};
-           // data.userId = this.userID;
+            //data.userId = this.userID;
             //data.groupId = this.groupId;
             data.msgText = this.msgText;
             data.replyValue = this.replyValue;
@@ -140,14 +114,6 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
                 console.log(error);
                 alert(error);
             });
-
-            //var msg = thisCtrl.newText;
-            // Need to figure out who I am
-            //var author = "Sujeily";
-            //var lname = "Fonseca"
-
-            //thisCtrl.messageLi st.unshift({"first_name": author, "last_name" : lname, "message" : msg, "like" : 0, "nolike" : 0});
-            //thisCtrl.newText = "";
         };
 
         this.postLike = function(){

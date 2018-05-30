@@ -8,27 +8,27 @@ h<div ng-cloak style="align-content: center">
                         <tbody>
                             <tr>
                                 <th>First Name: </th>
-                                <th><input ng-model="RegisterCtrl.fName" type="text"maxlength="50"></th>
+                                <th><input ng-model="RegisterCtrl.fName" type="text" required maxlength="50"></th>
                             </tr>
                             <tr>
                                 <th>Last Name: </th>
-                                <th><input ng-model="RegisterCtrl.lName" type="text" maxlength="50"></th>
+                                <th><input ng-model="RegisterCtrl.lName" type="text" required maxlength="50"></th>
                             </tr>
                             <tr>
                                 <th>Username: </th>
-                                <th><input ng-model="RegisterCtrl.username" type="text" maxlength="50"></th>
+                                <th><input ng-model="RegisterCtrl.username" type="text" required maxlength="50"></th>
                             </tr>
                              <tr>
                                 <th>Phone: </th>
-                                <th><input ng-model="RegisterCtrl.phone" type="text" maxlength="10"></th>
+                                <th><input ng-model="RegisterCtrl.phone" pattern="[0-9.]+" type="text" maxlength="10" ></th>
                             </tr>
                             <tr>
                                 <th>Email: </th>
-                                <th><input ng-model="RegisterCtrl.email" type="text" maxlength="50"></th>
+                                <th><input ng-model="RegisterCtrl.email" type="text" required maxlength="50"></th>
                             </tr>
                             <tr>
                                 <th>Password: </th>
-                                <th><input ng-model="RegisterCtrl.password" type="password" maxlength="50"></th>
+                                <th><input ng-model="RegisterCtrl.password" type="password" required maxlength="50"></th>
                             </tr>
                         </tbody>
                     </table>

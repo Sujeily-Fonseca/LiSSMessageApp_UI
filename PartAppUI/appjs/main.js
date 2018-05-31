@@ -31,8 +31,12 @@
             templateUrl: 'pages/group.html',
             controller: 'GroupController',
             controllerAs : 'groupCtrl'
+        }).when('/hashtags', {
+            templateUrl: 'pages/hashtags.html',
+            controller: 'HashtagsController',
+            controllerAs : 'hashtagsCtrl'
         }).otherwise({
-            redirectTo: '/login'
+            redirectTo: '/chat'
         });
     }]);
 })();

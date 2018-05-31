@@ -4,6 +4,8 @@ angular.module('PartAppUI').controller('ChatController', ['$http', '$log', '$sco
 
         this.messageList = [];
         this.newText = "";
+        this.hashString="";
+
 
         var userId = "";
         this.groupId = localStorage.groupID;
@@ -132,6 +134,23 @@ angular.module('PartAppUI').controller('ChatController', ['$http', '$log', '$sco
             });
         };
 
+        this.getParticipantsFor(groupID){
+              var url_reactions = "http://127.0.0.1:5000/MessageApp/reactions?msgId=" + groupID;
+             $log.log("MsgID", message["msgID"]);
+
+            $http.get(url_reactions).then(function(response){
+                $log.log("Reactions Loaded: ", response.data);
+                $log.log("MsgID", message["msgID"]);
+                reactions = response.data;
+                message = thisCtrl.messageList.find(function(element){
+                    return element["msgID"] == msgID;
+                    }
+                );
+                message.likes = reactions['Reactions']['likes']['count'];
+                message.dislikes = reactions['Reactions']['dislikes']['count'];
+            });
+        };
+
         this.postMsg = function(){
             var data = {};
             //data.userId = 1+"";//this.userID;
@@ -168,5 +187,12 @@ angular.module('PartAppUI').controller('ChatController', ['$http', '$log', '$sco
             //thisCtrl.newText = "";
         };
 
+
+        this.savehashString = function(){
+            if(typeof(Storage) !== "undefined"){
+                $log.log("ENTRE EN SAVE");
+                localStorage.setItem("hashString", this.hashString);
+            }
+        }
         this.loadMessages();
 }]);

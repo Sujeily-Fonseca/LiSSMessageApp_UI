@@ -1,13 +1,55 @@
-<div ng-cloak style="align-content: center">
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">LiSS Message App</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><div><a href="profile.html">My Profile</a></div></li>
+        <li><div><a href="#!/group">My Chats</a></div></li>
+        <li><a href="chat.html">My contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div ng-cloak style="align-content: center">
+      <div class="car-action">
+<div class="topnav">
+  <div class="search-container" style="float:right" >
+    <form action="#!/hashtags">
+      <input type="text"  ng-model="chatCtrl.hashString" placeholder="Search Hashtag..." name="search" maxlength="50">
+        <button class="btn waves-effect cyan darken-1" type="submit" name="action" ng-click="chatCtrl.savehashString()" ><i class="fa fa-search"></i></button>
+    </form>
+      </div>
+</div>
+  </div>
+      <div ng-repeat="m in chatCtrl.participants">
+       <div class="card">
+                        <div class="card-content">
+                            <!-- Card Title is the person who write the message -->
+                            <span class="card-title">Participants</span>
+                            <!-- Here comes the message text -->
+                            <p>
+                                {{m.participant}}
+                            </p>
+                        </div>
+       </div>
+      </div>
+    <!--ng-model="hashtagsCtrl.hashString"-->
+
+    <!--<div  id="chat-list" style="height:300px;overflow:auto">-->
     <div class="row">
-        <div class="col s12 m4 l3">
-            <ul class="nav-news-feed">
-                <li><div><a href="profile.html">My Profile</a></div></li>
+                 <!--"row">-->
+        <!--<div class="col s6">-->
+            <!--//class="col s12 m4 l3">-->
+            <!--<ul class="nav-news-feed">-->
+                <!--<li><div><a href="profile.html">My Profile</a></div></li>-->
                 <!--<li><div><a href="contacts.html">Contacts</a></div></li>-->
-                <li><div><a href="chat.html">Chats</a></div></li>
+                <!--<li><div><a href="chat.html">Chats</a></div></li>-->
                 <!--<li><div><a href="images.html">Images</a></div></li>-->
                 <!--<li><div><a href="videos.html">Videos</a></div></li>-->
-            </ul>
+            <!--</ul>-->
+        <!--</div>-->
+        <div>
+            <h1>Group: BLAH</h1>
         </div>
         <div class="col s12 m8 19">
             <div class="card  cyan darken-1">
@@ -24,7 +66,6 @@
         </div>
     </div>
 
-    <!--<div  id="chat-list" style="height:300px;overflow:auto">-->
     <div class="col s12 m8 19">
         <!-- Here come the messages in the chat, each one presented in card -->
         <div ng-repeat="m in chatCtrl.messageList">

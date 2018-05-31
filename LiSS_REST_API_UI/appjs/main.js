@@ -4,9 +4,9 @@
 
     app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider, $location) {
         $routeProvider.when('/login', {
-            templateUrl: 'login.html',
-            controller: 'LoginController',
-            controllerAs : 'loginCtrl'
+            templateUrl: 'pages/login.html',
+            controller: 'LogInController',
+            controllerAs : 'LogInCtrl'
         }).when('/chat', {
             templateUrl: 'pages/chat.html',
             controller: 'ChatController',
@@ -19,8 +19,12 @@
             templateUrl: 'pages/profile.html',
             controller: 'ProfileController',
             controllerAs : 'profileCtrl'
+        }).when('/register', {
+            templateUrl: 'pages/register.html',
+            controller: 'RegisterController',
+            controllerAs : 'RegisterCtrl'
         }).otherwise({
-            redirectTo: '/chat'
+            redirectTo: '/login'
         });
     }]);
 

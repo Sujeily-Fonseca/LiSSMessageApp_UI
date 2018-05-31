@@ -15,7 +15,7 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
 
         this.loadMessages = function(){
 
-            var url = "http://127.0.0.1:5000/MessageApp/messages/groups/1";
+            var url = "http://127.0.0.1:5000/MessageApp/messages/groups/" + groupId;
 
              $http.get(url).then( function(data){
                 // Get the messages from the server through the rest api

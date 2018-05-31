@@ -2,6 +2,7 @@ angular.module('AppChat').controller('GroupController', ['$http', '$log', '$scop
     function($http, $log, $scope ,$location, $routeParams) {
         var thisCtrl = this;
 
+        this.userID = localStorage.userID;
         this.groupList = [];
         this.newGroup = "";
         this.ownerId = "";
@@ -9,7 +10,7 @@ angular.module('AppChat').controller('GroupController', ['$http', '$log', '$scop
 
         this.loadGroups = function() {
 
-            var url = "http://127.0.0.1:5000/MessageApp/groups/user/1";
+            var url = "http://127.0.0.1:5000/MessageApp/groups/user/" + userID;
 
             $http.get(url).then(function (data) {
 

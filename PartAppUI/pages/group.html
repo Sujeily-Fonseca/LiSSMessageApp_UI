@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+
+        .button4 {
+            background-color: white;
+            color: black;
+            border: 2px solid #e7e7e7;
+        }
+
+        .button4:hover {background-color: #e7e7e7;}
+    </style>
+</head>
+
+<body>
+<script>
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+
+    // Declare a loop variable
+    var i;
+
+    // List View
+    function listView() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.width = "100%";
+        }
+    }
+
+    // Grid View
+    function gridView() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.width = "50%";
+        }
+    }
+
+    /* Optional: Add active class to the current button (highlight it) */
+    var container = document.getElementById("btnContainer");
+    var btns = container.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+</script>
+
+<center><h2><font face="verdana" size="5" style="color:DodgerBlue;">MY GROUPS</font></h2></center>
+<div ng-cloak style="align-content: center">
+    <div ng-repeat="g in groupCtrl.groupList">
+        <div class="row">
+          <div class="column" style="background-color:#0099ff;">
+            <h4><font face="verdana" size="5" style="color:white;">{{g.group_name}}</font></h4>
+              <a class="waves-effect  teal lighten-1 btn-small" href="#!/chat" ng-click="groupCtrl.saveGroupId(g.groupID)">SELECT GROUP</a>
+          </div>
+        </div>
+    </div>
+    <div style="align-content: center">
+    <table>
+        <tbody>
+        <tr>
+            <th> Group Name to Add: </th>
+            <th><input ng-model="groupCtrl.newGroup" type="text" maxlength="50"></th>
+        </tr>
+        </tbody>
+    </table>
+        <div class="card-action">
+            <a class="waves-effect  teal lighten-1 btn-small" ng-click="groupCtrl.postGroup()">Add Group</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

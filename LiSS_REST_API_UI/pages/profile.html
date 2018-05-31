@@ -5,10 +5,23 @@
     <title>My Profile</title>
 </head>
 <body>
-    <div> UserName: </div>
-    <div> First Name: </div>
-    <div> Last Name: </div>
-    <div> Phone Number: </div>
-    <div> Email: </div>
+<div ng-cloak style="align-content: center">
+    <div ng-repeat="u in profileCtrl.profileList">
+        <center> <b> <font size="16">My Profile</font></b> </center>
+
+        <center><div> <img src="images/ProfilePicture.jpg"  style="width:350px;height:350px;"></div></center>
+
+        <center> <b> <font size="16">{{u.fName}} {{u.lName}}</font></b> </center>
+
+        <center><div> <img src="images/username.png" alt="username" style="width:30px;height:30px;">
+            <b> <font size="6">Username: {{u.username}}</font> </b> </div></center>
+
+        <center><div> <img src="images/phone.png" alt="phone" style="width:30px;height:30px;">
+            <b> <font size="6">Phone Number: {{u.phone}}</font> </b> </div></center>
+
+        <center><div> <img src="images/email.png" alt="email" style="width:30px;height:30px;">
+            <b> <font size="6">Email: {{u.email}}</font> </b> </div></center>
+    </div>
+</div>
 </body>
 </html>

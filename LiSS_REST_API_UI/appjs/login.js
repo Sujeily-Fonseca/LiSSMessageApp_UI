@@ -14,7 +14,10 @@ angular.module('AppChat').controller('LogInController', ['$http', '$log', '$scop
 
         this.login = function(){
             // Build the data object
-
+            if (!this.username || !this.password) {
+                console.log("Empty fields")
+                return
+            }
 
             var data = {};
             data.username = this.username;
@@ -36,6 +39,7 @@ angular.module('AppChat').controller('LogInController', ['$http', '$log', '$scop
 
             $http.post(reqURL, data, config).then( function (response) {
                     $log.log(response);
+
                     var logged = response['data']['User_Logged_In']['userId'];
                     $log.log(logged)
                     $log.log("Log info:", logged);
@@ -46,16 +50,14 @@ angular.module('AppChat').controller('LogInController', ['$http', '$log', '$scop
 //                    thisCtrl.loginList.push({
 //                        "userId":logs['userId']
 //                    });
-
-                    setTimeout(location.reload(), .1);
                     userId = logged;
                     //$log.log(logs['userId']);
-                    $location.url('/group');
+
 
                     if(typeof(Storage) !== "undefined") {
                         localStorage.setItem("userID", userId);
                     }
-
+                    $location.path('/group');
 
                 }).catch(function(error){
                         console.log(error);

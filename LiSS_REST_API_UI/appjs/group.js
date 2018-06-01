@@ -28,6 +28,9 @@ angular.module('AppChat').controller('GroupController', ['$http', '$log', '$scop
                         "group_name":group['groupName']
                     });
                 };
+            }).catch(function(error) {
+                this.groupList = [];
+                console.log("no groups");
             });
         };
 

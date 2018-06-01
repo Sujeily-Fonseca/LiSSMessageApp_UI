@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83634514-a158-4c98-90e4-07c78a86bc95" name="Default" comment="" />
+    <list default="true" id="83634514-a158-4c98-90e4-07c78a86bc95" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/PartAppUI/appjs/chat.js" afterPath="$PROJECT_DIR$/PartAppUI/appjs/chat.js" />
+      <change beforePath="$PROJECT_DIR$/PartAppUI/appjs/main.js" afterPath="$PROJECT_DIR$/PartAppUI/appjs/main.js" />
+      <change beforePath="$PROJECT_DIR$/PartAppUI/index.html" afterPath="$PROJECT_DIR$/PartAppUI/index.html" />
+      <change beforePath="$PROJECT_DIR$/PartAppUI/pages/chat.html" afterPath="$PROJECT_DIR$/PartAppUI/pages/chat.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +16,78 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="adduser.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PartAppUI/pages/adduser.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="102" column="53" lean-forward="false" selection-start-line="102" selection-start-column="53" selection-end-line="102" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="group.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/group.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adduser.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/adduser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-64">
+              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chat.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PartAppUI/pages/chat.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="69" column="123" lean-forward="false" selection-start-line="69" selection-start-column="123" selection-end-line="69" selection-end-column="123" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PartAppUI/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chat.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/chat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="183" column="14" lean-forward="false" selection-start-line="183" selection-start-column="14" selection-end-line="183" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,6 +111,12 @@
         <option value="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/profile.js" />
         <option value="$PROJECT_DIR$/LiSS_REST_API_UI/pages/profile.html" />
         <option value="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/register.js" />
+        <option value="$PROJECT_DIR$/PartAppUI/appjs/main.js" />
+        <option value="$PROJECT_DIR$/PartAppUI/index.html" />
+        <option value="$PROJECT_DIR$/PartAppUI/pages/chat.html" />
+        <option value="$PROJECT_DIR$/PartAppUI/appjs/chat.js" />
+        <option value="$PROJECT_DIR$/PartAppUI/pages/adduser.html" />
+        <option value="$PROJECT_DIR$/PartAppUI/appjs/adduser.js" />
       </list>
     </option>
   </component>
@@ -50,6 +133,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-86" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="729" />
@@ -90,6 +174,12 @@
               <item name="LiSSMessageApp_UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="LiSSMessageApp_UI" type="462c0819:PsiDirectoryNode" />
               <item name="PartAppUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LiSSMessageApp_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LiSSMessageApp_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="PartAppUI" type="462c0819:PsiDirectoryNode" />
+              <item name="appjs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LiSSMessageApp_UI" type="b2602c69:ProjectViewProjectNode" />
@@ -149,9 +239,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="729" extended-state="6" />
+    <frame x="-86" y="22" width="1280" height="729" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29453126" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29453126" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -212,41 +303,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -432,20 +488,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/chat.html" />
-    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="168" column="0" lean-forward="false" selection-start-line="133" selection-start-column="8" selection-end-line="168" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PartAppUI/pages/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/chat.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
@@ -502,14 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PartAppUI/pages/group.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="86" column="44" lean-forward="false" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -549,6 +583,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="56" column="22" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="183" column="14" lean-forward="false" selection-start-line="183" selection-start-column="14" selection-end-line="183" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/pages/group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-882">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/adduser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/pages/adduser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="102" column="53" lean-forward="false" selection-start-line="102" selection-start-column="53" selection-end-line="102" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/pages/chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="69" column="123" lean-forward="false" selection-start-line="69" selection-start-column="123" selection-end-line="69" selection-end-column="123" />
+          <folding />
         </state>
       </provider>
     </entry>

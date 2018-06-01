@@ -155,6 +155,7 @@ angular.module('PartAppUI').controller('ChatController', ['$http', '$log', '$sco
         };
 
         this.postMsg = function(){
+
             var data = {};
             //data.userId = 1+"";//this.userID;
             //data.groupId = 1+"";//this.groupId;
@@ -180,7 +181,7 @@ angular.module('PartAppUI').controller('ChatController', ['$http', '$log', '$sco
                 console.log(error);
                 alert(error);
             });
-
+            //var myVar = setTimeout(this.loadMessages, 15000);
             //var msg = thisCtrl.newText;
             // Need to figure out who I am
             //var author = "Sujeily";

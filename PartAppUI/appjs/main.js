@@ -35,6 +35,10 @@
             templateUrl: 'pages/hashtags.html',
             controller: 'HashtagsController',
             controllerAs : 'hashtagsCtrl'
+        }).when('/adduser', {
+            templateUrl: 'pages/adduser.html',
+            controller: 'AddUserController',
+            controllerAs : 'adduserCtrl'
         }).otherwise({
             redirectTo: '/chat'
         });

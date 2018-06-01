@@ -4,22 +4,16 @@ angular.module('AppChat').controller('HashtagsController', ['$http', '$log', '$s
 
         this.messageList = [];
         this.hashString = localStorage.hashString;
-
-        var userId = "";
         this.groupId = localStorage.groupID;
-        $log.log("Este soy yooo!", this.groupId);
-        var replyValue = "False";
-        var replyId = "";
+
         //this.userID = localStorage.getItem("UID")
         //localStorage.removeItem("UID")
 
         this.loadHashtags = function(){
-            $log.log(hashString);
+            $log.log(this.chashString);
             var hashString = this.hashString;
             var url = "http://127.0.0.1:5000/MessageApp/message/hashtag/1?hashString=%23"+ hashString;
-             if(localStorage){
-                localStorage.removeItem("hashString");
-             }
+
              $http.get(url).then( function(data){
                 // Get the messages from the server through the rest api
                 $log.log("Message Loaded: ", data["data"]["Hashtags"]);
@@ -39,6 +33,9 @@ angular.module('AppChat').controller('HashtagsController', ['$http', '$log', '$s
                             "dislikes": reactions['Reactions']['dislikes']['count']
                         }
                         thisCtrl.messageList.push(msg);
+                         if(localStorage){
+                            localStorage.removeItem("hashString");
+                            }
                     });
                 })
 

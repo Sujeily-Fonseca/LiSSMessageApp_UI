@@ -1,3 +1,19 @@
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">LiSS Message App</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li><div><a><font color="gray">My Profile</font></a></div></li>
+          <li><div><a><font color="gray">My Chats</font></a></div></li>
+          <li><div><a><font color="gray">My contacts</font></a></div></li>
+      </ul>
+        <div >
+            <ul class="right hide-on-med-and-down">
+                <li><div><a href="#!/login"><font color="gray">Log Out</font></a></div></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
 <div ng-cloak style="align-content: center">
     <div class="row">
         <div class="col s12 m6">
@@ -8,11 +24,13 @@
                         <tbody>
                             <tr>
                                 <th>Username: </th>
-                                <th><input ng-model="LogInCtrl.username" type="text"></th>
+                                <th><input ng-model="LogInCtrl.username" type="text" maxlength="20" ng-required="required"> </th>
+
                             </tr>
                             <tr>
                                 <th>Password: </th>
-                                <th><input ng-model="LogInCtrl.password" type="password"></th>
+                                <th><input ng-model="LogInCtrl.password" type="password" maxlength="50" ></th>
+
                             </tr>
                         </tbody>
                     </table>
@@ -20,7 +38,7 @@
                 <div class="card-action">
                     <a class="waves-effect  grey btn-small" href="/#!/register">Register</a>
                     &nbsp; &nbsp;
-                    <a class="waves-effect  green lighten-1 btn-small" ng-click="LogInCtrl.login()">Log In</a>
+                    <a class="waves-effect  green lighten-1 btn-small" href="#!/group" ng-click="LogInCtrl.login()">Log In</a>
                 </div>
             </div>
         </div>

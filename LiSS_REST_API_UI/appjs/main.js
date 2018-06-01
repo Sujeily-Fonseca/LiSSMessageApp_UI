@@ -27,6 +27,14 @@
             templateUrl: 'pages/hashtags.html',
             controller: 'HashtagsController',
             controllerAs : 'hashtagsCtrl'
+        }).when('/adduser', {
+            templateUrl: 'pages/adduser.html',
+            controller: 'AddUserController',
+            controllerAs : 'adduserCtrl'
+        }).when('/contacts', {
+            templateUrl: 'pages/contacts.html',
+            controller: 'ContactsController',
+            controllerAs : 'contactsCtrl'
         }).otherwise({
             redirectTo: '/login'
         });

@@ -11,7 +11,7 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
 
         var msgText = "";
         var replyValue = "False";
-        var replyId = "";
+        var repliedId = "";
         var msgId = "";
 
         $log.log("Current groupID:", this.groupId);
@@ -113,14 +113,14 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
         };
 
         this.postMsg = function(){
+            var groupId = this.groupId;
+            var userId = this.userID;
             var data = {};
-            data.userId = this.userID;
-            data.groupId = this.groupId;
-            data.msgText = this.msgText;
-            data.replyValue = this.replyValue;
-            data.replyId = this.replyId;
+            data.newText = this.newText;
+            data.replyValue = "0";
+            data.repliedId = 0+"";
 
-            var reqURL = "http://localhost:5000//MessageApp/messages/groups/" + this.groupId + "/user/" + this.userId;
+            var reqURL = "http://localhost:5000/MessageApp/messages/groups/" + groupId + "/user/" + userId;
             console.log("reqURL: " + reqURL)
 
             var config = {
@@ -135,6 +135,46 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
                 console.log(error);
                 alert(error);
             });
+        };
+
+        this.postReply = function(msgId){
+            var data = {};
+            data.newText = this.newText;//"alfin terminamos"; //WE HAVE TO EDIT
+            data.replyValue = "1";
+            data.repliedId = msgId;
+
+            $log.log(data);
+
+            var reqURL = "http://localhost:5000/MessageApp/messages/groups/" + this.groupId + "/user/" + this.userID;
+            console.log("reqURL: " + reqURL)
+
+            var config = {
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                }
+            }
+
+            $http.post(reqURL, data, config).then(function (response){
+                jsonData = JSON.stringify(response.data)
+                $log.log("data: " + jsonData);
+                var replyId = response.data['Message']['msgId'];
+
+             var reqURL2 = "http://localhost:5000/MessageApp/messages/reply/" + replyId;
+
+             $http.get(reqURL2, data, config).then(function (response){
+                $log.log("data: " + JSON.stringify(response.data));
+            }).catch(function(error){
+                console.log(error);
+                alert(error);
+             });
+            }).catch(function(error){
+                console.log(error);
+                alert(error);
+            });
+
+
+
+
         };
 
         this.postLike = function(){

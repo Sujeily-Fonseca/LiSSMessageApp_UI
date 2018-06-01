@@ -1,4 +1,20 @@
-h<div ng-cloak style="align-content: center">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">LiSS Message App</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><div><a href="#!/profile">My Profile</a></div></li>
+        <li><div><a href="#!/group">My Chats</a></div></li>
+        <li><a href="#!/contacts">My contacts</a></li>
+      </ul>
+        <div class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down">
+                <li><div><a href="#!/login">Log Out</a></div></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+<div ng-cloak style="align-content: center">
     <div class="row">
         <div class="col s12 m6">
             <div class="card">
@@ -20,7 +36,7 @@ h<div ng-cloak style="align-content: center">
                             </tr>
                              <tr>
                                 <th>Phone: </th>
-                                <th><input ng-model="RegisterCtrl.phone" pattern="[0-9.]+" type="text" maxlength="10" ></th>
+                                <th><input ng-model="RegisterCtrl.phone" pattern="[0-9.]+" type="text" maxlength="10"  ></th>
                             </tr>
                             <tr>
                                 <th>Email: </th>

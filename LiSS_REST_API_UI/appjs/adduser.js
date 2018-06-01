@@ -1,12 +1,14 @@
-angular.module('PartAppUI').controller('AddUserController', ['$http', '$log', '$scope', '$location', '$routeParams',
+angular.module('AppChat').controller('AddUserController', ['$http', '$log', '$scope', '$location', '$routeParams',
     function($http, $log, $scope ,$location, $routeParams) {
         var thisCtrl = this;
-        this.ownerId = "1";//localStorage.userID;
+        this.ownerId = localStorage.userID;
         this.groupId = localStorage.groupID;
         this.userName = "";
 
 
         this.addUser = function(){
+
+
             //var ngroup = thisCtrl.newGroup;
             // Need to figure out who I am
             var data = {};

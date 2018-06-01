@@ -7,8 +7,8 @@ angular.module('AppChat').controller('ProfileController', ['$http', '$log', '$sc
 
         this.loadProfile = function() {
 
-            var url = "http://127.0.0.1:5000/MessageApp/user/profile/1";
-            //var url = "http://127.0.0.1:5000/MessageApp/user/profile/" + userID
+            //var url = "http://127.0.0.1:5000/MessageApp/user/profile/1";
+            var url = "http://127.0.0.1:5000/MessageApp/user/profile/" + this.userId;
 
             $http.get(url).then(function (response) {
 

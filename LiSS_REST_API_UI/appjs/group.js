@@ -1,7 +1,7 @@
 angular.module('AppChat').controller('GroupController', ['$http', '$log', '$scope', '$location', '$routeParams',
     function($http, $log, $scope ,$location, $routeParams) {
         if(localStorage!="undefined"){
-            localStorage.removeItem("groupID");
+            //localStorage.removeItem("groupID");
         }
 
         var thisCtrl = this;
@@ -34,9 +34,9 @@ angular.module('AppChat').controller('GroupController', ['$http', '$log', '$scop
         this.postGroup = function(){
             var data = {};
             data.newGroup = this.newGroup;
-            data.userId = this.userId;
+            //data.userId = this.userID;
             data.ownerId = localStorage.userID;;
-            var reqURL = "http://localhost:5000/MessageApp/MessageApp/groups";
+            var reqURL = "http://localhost:5000/MessageApp/groups";
             console.log("reqURL: " + reqURL);
             // configuration headers for HTTP request
             var config = {

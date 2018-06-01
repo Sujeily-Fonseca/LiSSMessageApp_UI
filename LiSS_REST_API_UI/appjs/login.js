@@ -4,7 +4,7 @@ angular.module('AppChat').controller('LogInController', ['$http', '$log', '$scop
         // from within the callbacks of the $http object
         if(localStorage!="undefined"){
             localStorage.removeItem("userID");
-            localStorage.removeItem("groupID");
+            //localStorage.removeItem("groupID");
 
         }
         var thisCtrl = this;
@@ -47,7 +47,7 @@ angular.module('AppChat').controller('LogInController', ['$http', '$log', '$scop
 //                        "userId":logs['userId']
 //                    });
 
-                    setTimeout(location.reload(), .005);
+                    setTimeout(location.reload(), .1);
                     userId = logged;
                     //$log.log(logs['userId']);
                     $location.url('/group');

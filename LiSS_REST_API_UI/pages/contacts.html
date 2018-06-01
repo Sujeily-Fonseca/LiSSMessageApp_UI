@@ -14,11 +14,11 @@
     </div>
   </nav>
     <!-- Page Layout here -->
-    <div class="row">
+    <div class="row" ng-controller="ContactsController">
 
       <div class="col s12 m8 19">
         <!-- Here come the messages in the chat, each one presented in card -->
-        <div ng-repeat="c in contactsCtrl.contactList">
+        <div ng-repeat="c in contactList">
             <!-- This card provides space for the message and Like/dislike buttons -->
             <div class="row">
                 <div class="col s9">
@@ -37,6 +37,20 @@
                     </div>
                 </div>
             </div>
+        </div>
+          <table>
+        <tbody>
+        <tr>
+            <!--<input ng-model="contactsCtrl.phone" type="text" maxlength="50">-->
+            <th> Contact to Add: </th>
+            <th> <input type="text" style="color:black; font-size:20px" id="phonenumber" pattern="(?=.*\d).{10}"
+                                title="Must contain 10 numbers" ng-model="phone"></th>
+
+        </tr>
+        </tbody>
+    </table>
+        <div class="card-action">
+            <button class="waves-effect  teal lighten-1 btn-small" ng-click="contactsCtrl.addcontact()">Add contact</button>
         </div>
     </div>
 

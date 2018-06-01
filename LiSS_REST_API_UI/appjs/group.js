@@ -38,7 +38,7 @@ angular.module('AppChat').controller('GroupController', ['$http', '$log', '$scop
             var data = {};
             data.newGroup = this.newGroup;
             //data.userId = this.userID;
-            data.ownerId = localStorage.userID;;
+            data.ownerId = localStorage.userID;
             var reqURL = "http://localhost:5000/MessageApp/groups";
             console.log("reqURL: " + reqURL);
             // configuration headers for HTTP request

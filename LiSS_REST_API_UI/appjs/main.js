@@ -23,14 +23,12 @@
             templateUrl: 'pages/register.html',
             controller: 'RegisterController',
             controllerAs : 'RegisterCtrl'
+        }).when('/hashtags', {
+            templateUrl: 'pages/hashtags.html',
+            controller: 'HashtagsController',
+            controllerAs : 'hashtagsCtrl'
         }).otherwise({
             redirectTo: '/login'
         });
-//        .when('/chat', {
-//            templateUrl: 'pages/chat.html',
-//            controller: 'ChatController',
-//            controllerAs : 'chatCtrl'
-//         })
     }]);
-
 })();

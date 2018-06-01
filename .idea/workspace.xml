@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83634514-a158-4c98-90e4-07c78a86bc95" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/hashtags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LiSS_REST_API_UI/pages/hashtags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/group.js" beforeDir="false" afterPath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LiSS_REST_API_UI/pages/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/LiSS_REST_API_UI/pages/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiSS_REST_API_UI/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/LiSS_REST_API_UI/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LiSS_REST_API_UI/pages/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/LiSS_REST_API_UI/pages/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PartAppUI/appjs/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/PartAppUI/appjs/chat.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,9 +20,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/login.js">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="group.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/group.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chat.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/chat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="620">
+              <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -33,21 +47,28 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Part</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/LiSS_REST_API_UI/pages/chat.html" />
-        <option value="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/chat.js" />
         <option value="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/group.js" />
-        <option value="$PROJECT_DIR$/LiSS_REST_API_UI/index.html" />
-        <option value="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/main.js" />
         <option value="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/login.js" />
         <option value="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/profile.js" />
         <option value="$PROJECT_DIR$/LiSS_REST_API_UI/pages/profile.html" />
         <option value="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/register.js" />
+        <option value="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/hashtags.js" />
+        <option value="$PROJECT_DIR$/LiSS_REST_API_UI/index.html" />
+        <option value="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/main.js" />
+        <option value="$PROJECT_DIR$/LiSS_REST_API_UI/pages/chat.html" />
+        <option value="$PROJECT_DIR$/PartAppUI/appjs/chat.js" />
+        <option value="$PROJECT_DIR$/LiSS_REST_API_UI/appjs/chat.js" />
       </list>
     </option>
   </component>
@@ -74,6 +95,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -81,26 +103,43 @@
               <item name="LiSSMessageApp_UI" type="b2602c69:ProjectViewProjectNode" />
               <item name="LiSSMessageApp_UI" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LiSSMessageApp_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LiSSMessageApp_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="LiSS_REST_API_UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LiSSMessageApp_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LiSSMessageApp_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="LiSS_REST_API_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="appjs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LiSSMessageApp_UI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LiSSMessageApp_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="LiSS_REST_API_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LiSSMessageApp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\LiSSMessageApp_UI\LiSS_REST_API_UI\pages" />
+      <recent name="D:\GitHub\LiSSMessageApp_UI\LiSS_REST_API_UI\appjs" />
       <recent name="$PROJECT_DIR$/PartAppUI/appjs" />
       <recent name="$PROJECT_DIR$/PartAppUI/pages" />
       <recent name="$PROJECT_DIR$/LiSS_REST_API_UI/pages" />
-      <recent name="$PROJECT_DIR$/LiSS_REST_API_UI/appjs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -130,6 +169,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
@@ -138,42 +178,56 @@
       <window_info anchor="bottom" id="Python Console" order="5" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.295302" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.29932886" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="7" />
-    </layout>
-    <layout-to-restore>
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3568075" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.295302" />
+      <window_info anchor="right" id="SciView" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Python Console" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Python Console" order="5" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.295302" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="0" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="5" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="0" />
-      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Message" order="6" />
       <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -188,46 +242,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -260,27 +274,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/js/angular-route.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17829">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
+        <state relative-caret-position="-17829" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PartAppUI/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -302,9 +307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -423,34 +425,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/chat.html" />
-    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="168" selection-start-line="133" selection-start-column="8" selection-end-line="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PartAppUI/pages/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="193" selection-start-line="193" selection-end-line="193" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/group.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1445">
@@ -462,29 +436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/register.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -492,7 +443,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -500,15 +450,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PartAppUI/pages/group.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
-          <caret line="86" column="44" lean-forward="false" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="44" />
-          <folding />
+          <caret line="86" column="44" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -516,13 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="63" lean-forward="true" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -540,9 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/group.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -550,15 +488,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/group.js">
+    <entry file="file://$PROJECT_DIR$/PartAppUI/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="22" selection-start-line="56" selection-start-column="16" selection-end-line="58" selection-end-column="13" />
+        <state relative-caret-position="467">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/login.js">
+    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/hashtags.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/hashtags.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="65" lean-forward="true" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/pages/chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="25" selection-start-line="25" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/pages/chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3298">
+          <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PartAppUI/appjs/group.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LiSS_REST_API_UI/appjs/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

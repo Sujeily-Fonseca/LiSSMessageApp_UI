@@ -180,14 +180,6 @@ angular.module('PartAppUI').controller('ChatController', ['$http', '$log', '$sco
                 console.log(error);
                 alert(error);
             });
-
-            //var msg = thisCtrl.newText;
-            // Need to figure out who I am
-            //var author = "Sujeily";
-            //var lname = "Fonseca"
-
-            //thisCtrl.messageLi st.unshift({"first_name": author, "last_name" : lname, "message" : msg, "like" : 0, "nolike" : 0});
-            //thisCtrl.newText = "";
         };
 
 

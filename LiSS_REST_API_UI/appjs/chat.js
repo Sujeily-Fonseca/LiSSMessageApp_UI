@@ -3,19 +3,22 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
         var thisCtrl = this;
 
         this.messageList = [];
+        this.participantsList = [];
         this.newText = "";
-        this.hashText = "";
+        this.hashString=localStorage.hashString;
+        this.groupId = localStorage.groupID;
+        this.userID = localStorage.userID;
 
-        var userId = "";
-        var groupId = localStorage.groupID;
         var msgText = "";
         var replyValue = "False";
         var replyId = "";
         var msgId = "";
 
+        $log.log("Current groupID:", this.groupId);
+
         this.loadMessages = function(){
 
-            var url = "http://127.0.0.1:5000/MessageApp/messages/groups/" + groupId;
+            var url = "http://127.0.0.1:5000/MessageApp/messages/groups/" + this.groupId;
 
              $http.get(url).then( function(data){
                 // Get the messages from the server through the rest api
@@ -45,33 +48,33 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
             });
         };
 
-        this.messageWithHashtags = function(){
+        // this.messageWithHashtags = function(){
 
-            var url = "http://127.0.0.1:5000/MessageApp/message/hashtag/" + parseInt(this.groupId)+"?hashString=%23" + hashText;
+        //     var url = "http://127.0.0.1:5000/MessageApp/message/hashtag/" + parseInt(this.groupId)+"?hashString=%23" + hashText;
 
-             $http.get(url).then( function(data){
-                // Get the messages from the server through the rest api
-                $log.log("Message Loaded: ", data["data"]["Messages"]);
-                messages = data["data"]["Messages"];
-                messages.forEach(function(part, index, arr){
-                    var url_reactions = "http://127.0.0.1:5000/MessageApp/reactions?msgId=" + arr[index]["msgID"]
-                    $http.get(url_hash).then(function(response) {
+        //      $http.get(url).then( function(data){
+        //         // Get the messages from the server through the rest api
+        //         $log.log("Message Loaded: ", data["data"]["Messages"]);
+        //         messages = data["data"]["Messages"];
+        //         messages.forEach(function(part, index, arr){
+        //             var url_reactions = "http://127.0.0.1:5000/MessageApp/reactions?msgId=" + arr[index]["msgID"]
+        //             $http.get(url_hash).then(function(response) {
 
-                        reactions = response.data;
-                        msg = {
-                            "msgID": arr[index]["msgID"],
-                            "message": arr[index]["message"],
-                            "userID": arr[index]["userID"],
-                            "first_name": arr[index]["fName"],
-                            "last_name": arr[index]["lName"],
-                            "likes": reactions['Reactions']['likes']['count'],
-                            "dislikes": reactions['Reactions']['dislikes']['count']
-                        }
-                        thisCtrl.messageList.push(msg);
-                    });
-                })
-            });
-        };
+        //                 reactions = response.data;
+        //                 msg = {
+        //                     "msgID": arr[index]["msgID"],
+        //                     "message": arr[index]["message"],
+        //                     "userID": arr[index]["userID"],
+        //                     "first_name": arr[index]["fName"],
+        //                     "last_name": arr[index]["lName"],
+        //                     "likes": reactions['Reactions']['likes']['count'],
+        //                     "dislikes": reactions['Reactions']['dislikes']['count']
+        //                 }
+        //                 thisCtrl.messageList.push(msg);
+        //             });
+        //         })
+        //     });
+        // };
 
         function getReactionsFor(msgID){
             var url_reactions = "http://127.0.0.1:5000/MessageApp/reactions?msgId=" + msgID;
@@ -90,15 +93,34 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
             });
         };
 
+        this.getParticipantsFor = function(groupID){
+            var url_participants = "http://127.0.0.1:5000/MessageApp/participants/" + this.groupId;
+           //$log.log("MsgID", message["msgID"]);
+              var userName;
+          $http.get(url_participants).then(function(data){
+              participants = data['data']['Participants'];
+              $log.log("Participants Loaded: ", participants);
+              for (p in participants) {
+                  participant = participants[p];
+                  $log.log(participant[p]);
+                  thisCtrl.participantsList.push({
+                      "userName":participant['userName']
+                  });
+                    $log.log(participant['userName']);
+              };
+
+          });
+        };
+
         this.postMsg = function(){
             var data = {};
-            //data.userId = this.userID;
-            //data.groupId = this.groupId;
+            data.userId = this.userID;
+            data.groupId = this.groupId;
             data.msgText = this.msgText;
             data.replyValue = this.replyValue;
             data.replyId = this.replyId;
 
-            var reqURL = "http://localhost:5000//MessageApp/messages/groups/" + groupId + "/user/" + userId
+            var reqURL = "http://localhost:5000//MessageApp/messages/groups/" + this.groupId + "/user/" + this.userId;
             console.log("reqURL: " + reqURL)
 
             var config = {
@@ -109,7 +131,6 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
 
             $http.post(reqURL, data, config).then(function (response){
                 console.log("data: " + JSON.stringify(response.data));
-                alert("New message sent by user: " + response.data.Part.uid);
             }).catch(function(error){
                 console.log(error);
                 alert(error);
@@ -119,7 +140,7 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
         this.postLike = function(){
             var data = {};
             data.lValue = 1 + "";
-            data.userId = 1 + "";
+            data.userId = this.userID + "";
             data.msgId = 1 + "";
 
             var reqURL = "http://localhost:5000/MessageApp/reactions"
@@ -144,7 +165,7 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
         this.postDislike = function(){
             var data = {};
             data.lValue = 0 + "";
-            data.userId = 1 + "";
+            data.userId = this.userID + "";
             data.msgId = 2 + "";
 
             $log.log("Reactions: ", this.lValue)
@@ -167,5 +188,12 @@ angular.module('AppChat').controller('ChatController', ['$http', '$log', '$scope
             });
         };
 
+        this.savehashString = function(){
+            if(typeof(Storage) !== "undefined"){
+                $log.log("ENTRE EN SAVE");
+                localStorage.setItem("hashString", this.hashString);
+            }
+        }
         this.loadMessages();
+        this.getParticipantsFor(this.groupId);
 }]);

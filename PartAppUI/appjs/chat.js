@@ -3,8 +3,9 @@ angular.module('PartAppUI').controller('ChatController', ['$http', '$log', '$sco
         var thisCtrl = this;
 
         this.messageList = [];
+        this.participantsList = [];
         this.newText = "";
-        this.hashString="";
+        this.hashString=localStorage.hashString;
 
 
         var userId = "";
@@ -134,20 +135,22 @@ angular.module('PartAppUI').controller('ChatController', ['$http', '$log', '$sco
             });
         };
 
-        this.getParticipantsFor(groupID){
-              var url_reactions = "http://127.0.0.1:5000/MessageApp/reactions?msgId=" + groupID;
-             $log.log("MsgID", message["msgID"]);
+        this.getParticipantsFor = function(groupID){
+              var url_participants = "http://127.0.0.1:5000/MessageApp/participants/" + this.groupId;
+             //$log.log("MsgID", message["msgID"]);
+                var userName;
+            $http.get(url_participants).then(function(data){
+                participants = data['data']['Participants'];
+                $log.log("Participants Loaded: ", participants);
+                for (p in participants) {
+                    participant = participants[p];
+                    $log.log(participant[p]);
+                    thisCtrl.participantsList.push({
+                        "userName":participant['userName']
+                    });
+                      $log.log(participant['userName']);
+                };
 
-            $http.get(url_reactions).then(function(response){
-                $log.log("Reactions Loaded: ", response.data);
-                $log.log("MsgID", message["msgID"]);
-                reactions = response.data;
-                message = thisCtrl.messageList.find(function(element){
-                    return element["msgID"] == msgID;
-                    }
-                );
-                message.likes = reactions['Reactions']['likes']['count'];
-                message.dislikes = reactions['Reactions']['dislikes']['count'];
             });
         };
 
@@ -195,4 +198,5 @@ angular.module('PartAppUI').controller('ChatController', ['$http', '$log', '$sco
             }
         }
         this.loadMessages();
+        this.getParticipantsFor(this.groupId);
 }]);

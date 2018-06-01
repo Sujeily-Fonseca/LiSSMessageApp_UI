@@ -26,6 +26,11 @@
         }).otherwise({
             redirectTo: '/login'
         });
+//        .when('/chat', {
+//            templateUrl: 'pages/chat.html',
+//            controller: 'ChatController',
+//            controllerAs : 'chatCtrl'
+//         })
     }]);
 
 })();
